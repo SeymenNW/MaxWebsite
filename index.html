@@ -8,16 +8,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     </head>
     <body>
         <section  class="header">
-            <nav class="nav-links" >
+                <link rel="html" href="headernav.html">
+            <!-- <nav >
                 <a  href="index.html">
                     <img src="images/tranBull.png"></a>
 
-                    <div >
-                        <ul>
+                    <div class="nav-links" id="navLinks" >
+
+                        <a  onclick="hideMenu()">
+                        <span  class="material-symbols-outlined">
+                            
+                            close
+                            
+                          
+                            </span>   
+                        </a>
+                                                 <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Red Bull Racing</a></li>
                         <li><a href="">FORMULA 1</a></li>
@@ -27,8 +38,16 @@
 
                     </ul>
                     </div>
+                    <a  onclick="showMenu()">
+                        <span  class="material-symbols-outlined" >
+                            
+                            menu
+                            
+                          
+                            </span>   
+                        </a>
                 
-            </nav>
+            </nav> -->
 
             <div class="textbox">
                 <h1>FORMULA 1 - RED BULL</h1>
@@ -37,7 +56,48 @@
             </div>
         </section>
 
+        <!-- Courses -->
 
-        <p class="para">Starting something new.. MaxWebsite (lol)</p>
+        <section class="course">
+            <h1>Courses we offer</h1>
+            <p>RED BULL COURSES</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate Racing F1</h3>
+                    <p>This is the best Racing course for RB18 - Red Bull Racing F1 Car!
+                        Make sure not to miss this course!
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Verstappen. A Two Time World Champion</h3>
+                    <p>Max Verstappen. Someone you just can't beat! Nearly a 3x World Champion!
+                    </p>
+                </div>
+                <div class="course-col">
+                    <h3>Checoooo. The Absolute Animal.</h3>
+                    <p>Get yourself a man like Checo. We abuse him every race and prioritize Max over him.
+                    </p>
+                </div>
+            </div>
+        </section>
+<section >
+
+</section>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0px";
+
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-250px";
+
+
+            }
+        </script>
     </body>
 </html>
